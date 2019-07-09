@@ -1,0 +1,56 @@
+
+  <div class="table-responsive">
+    <h1 class="">Results</h1>
+    <p>Your Score is <a class="font-weight-bold">{{score}}</a></p>
+
+    <!-- <div class="row" >
+        <ul class="list-group col-lg-12">
+            <li class="list-group-item choice"  *ngFor="let answer of answers">
+              
+                <div  class="list-item ng-tns-c4-3" ng-reflect-klass="list-item" >
+                  <span  class="choice-title text-center" >{{answer.status}}</span>
+                  <span  class="choice-title text-center" >{{answer.status}}</span>
+                </div>
+            </li>
+          </ul>
+    </div>
+      
+    <ul class="actions">
+      <li>
+        <a class="button special" (click)="reset()">Take Quiz again</a>
+
+        
+      </li>
+
+    </ul> -->
+
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" >#</th>
+            <th scope="col">Picked Answer</th>
+            <th scope="col">Correct Answer</th>
+            <th scope="col">Status</th>
+            <th scope="col" >View Detail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let answer of answers; let i = index">
+            <td>{{i + 1}}</td>
+            <td>{{answer.letter_selected}}</td>
+            <td>{{answer.letter_correct}}</td>
+            <td>{{answer.status}}</td>
+            <th scope="row" style="color:#00758f" >
+                <a class="link-detail" (click)="open(answer)">View Detail</a>
+              </th>
+          </tr>
+        </tbody>
+    </table>
+
+   
+       <button class="button-oracle-finish">
+        <a href="/exam" >Take Quiz again</a>
+      </button>
+   
+
+  </div>

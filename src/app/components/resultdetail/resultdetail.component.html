@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h4 class="modal-title">Detail of Question [{{answer.number}}]</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+  </div>
+  <div class="modal-body">
+    <div  [className]="(answer.status =='Ok')?'card lesson-border border-success ' : 'card lesson-border border-danger' ">
+      <!-- <img class="card-img-top" src="{{lesson.image_path}}" alt="Card image cap"> -->
+      <div class="card-body">
+        <p class="card-text"><b>Question: </b></p>
+        <p class="card-text">{{answer.description}}</p>
+        <p class="card-text"><b>Explanation: </b></p>
+        <p class="card-text">Answer<b>{{ ' ' + answer.letter_selected}}</b>  {{' is ' +  answer.status}}</p>
+        <p class="card-text">{{answer.feedback}}</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark button-oracle" (click)="activeModal.close('Close click')">Close</button>
+  </div>

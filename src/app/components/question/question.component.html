@@ -1,0 +1,18 @@
+<div class="">
+     <br>
+    <div class="col-sm-12 col-xs-12 col-md-12  col-lg-12" style="padding-bottom:2%">
+
+      <!-- Para Preguntas tipeadas -->
+     <!-- <div color-oracle-text [className]="(i==0)?'font-weight-bold' : '' " *ngFor="let line of question.title;  let i = index"><p class="no-space">{{line}}</p></div><br> -->
+     <div class="top1">  
+        <div class="span3 food1">
+            <img [src]="question.title" alt="" [title]="question.title">
+        </div>
+     </div>
+    </div>
+  <ul class="list-group col-sm-12 col-xs-12 col-md-12  col-lg-12" style="padding-right: 10px; padding-left: 10px">
+    <li class="list-group-item choice" style="padding:0px" (click)="onClicked(choice, question, i)" *ngFor="let choice of question.choices; let i = index">
+      <bq-choice drawType='list' [choice]="choice" [isSelected]="choice.isSelected"></bq-choice>
+    </li>
+  </ul>
+</div>

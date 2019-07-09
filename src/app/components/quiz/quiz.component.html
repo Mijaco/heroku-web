@@ -1,0 +1,53 @@
+
+<!-- <div class="oulogo color-oracle-div row">
+  <div class="col-md-12 col-xs-12 col-sm-12">
+   <div class="col-md-6 col-xs-6 col-sm-6">ggfg</div>
+   <div class="col-md-6 col-xs-6 col-sm-6">aaa</div>
+  </div> -->
+  <!-- <a data-bind="ccLink:{'route': $data['elements']['ouLogo'].homeUrl()}" data-lbl="logo" ><span></span></a> -->
+<!-- </div> -->
+
+<div class="oulogo color-oracle-div row" style="color:white;" >
+    <div class="col-8 logo" ></div>
+    <div class="col-4">{{activeSlideIndex +1}} of {{questions.length}}</div>
+</div>
+
+
+<div class="container-fluid" style="padding:0px 10px 0px 10px">
+  <div class="">
+
+      <carousel [interval]="-1" [(activeSlide)]="activeSlideIndex" *ngIf="!showSummary">
+        <slide *ngFor="let question of questions; let i = index">
+          <bq-question
+            class="group"
+            *ngIf="activeSlideIndex == i"
+            [question]="question"
+            (selectedChoice)="onSelected(i, $event)"
+            [selected]="selections[i]"></bq-question>
+
+            
+          <ul class="list-inline" *ngIf="3 > questions.length">
+            <li
+              *ngFor="let question of questions; let i = index"
+              (click)="changeActiveSlide(i)"
+              [@pageState]="activeSlideIndex == i ? 'active' : 'inactive'"
+              [ngClass]="{'selected': selections[i] != null}">
+              <span [hidden]="selections[i] != null">{{i+1}}</span>
+              <img class="choice-selected" [hidden]="selections[i] == null" src="/assets/images/checked.png">
+            </li>
+            
+          </ul>
+          <button *ngIf="!showSummary" type="button" (click) = "goToSummary()" style="width: 50%; margin: 0 auto; margin-top: 10px;margin-bottom: 5px;" class="list-inline btn btn-primary button-oracle">Finish</button>
+        </slide>
+        
+      </carousel>
+      
+      
+      <bq-summary *ngIf="showSummary" [summary]="getSummary()" (resetQuiz)="resetQuiz()"></bq-summary>
+ 
+  </div>
+</div>
+<!-- <div class="option">
+  <label> Auto next slide</label>
+  <input #ctrl="ngModel" [(ngModel)]='option' type='checkbox'>
+</div> -->

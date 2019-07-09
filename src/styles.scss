@@ -1,0 +1,188 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color:#bfced6;
+}
+
+.carousel-control-prev-custom {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 15%;
+  color: #fff;
+  text-align: center;
+  opacity: .5;
+  transition: opacity .15s ease;
+
+}
+
+.color-oracle-div {
+  background-color: #003b4d;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.button-oracle {
+  border-color: #386166 !important;
+  background-color:#386166 !important; 
+  color:white !important;
+  border: 0px;  
+}
+
+.button-oracle-finish {
+
+  font-weight: bold;
+  /* font-family: inherit; */
+  /* line-height: inherit; */
+  /* display: inline-block; */
+  background-color: #233540;
+  border: 2px solid white;
+  border-color: white!important;
+  cursor: pointer;
+
+}
+
+.button-oracle-finish a {
+  color: white;
+  text-decoration:none;
+}
+
+.button-oracle-finish a:hover{
+  color: #233540 !important;
+  text-decoration:none;
+}
+
+.button-oracle-finish:hover{
+background-color: white !important;
+border: 2px solid #233540;
+cursor: pointer;
+color: #233540 !important
+}
+
+
+
+.color-oracle-text{
+  color: #233540;
+}
+
+.outlog {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  text-indent: -2000px;
+  background: #c10000;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #c10000 0%, #ff0000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c10000), color-stop(100%, #ff0000));
+  background: -webkit-linear-gradient(top, #c10000 0%, #ff0000 100%);
+  background: -o-linear-gradient(top, #c10000 0%, #ff0000 100%);
+  background: -ms-linear-gradient(top, #c10000 0%, #ff0000 100%);
+  background: linear-gradient(to bottom, #c10000 0%, #ff0000 100%);
+}
+
+.oulogo .logo {
+  display: block;
+  width: 134px;
+  height: 45px;
+  padding: 0 !important;
+  background: url(https://education.oracle.com/file/general/cc-ou-logo-wh.png) 0 0 no-repeat;
+  -moz-outline: 0;
+  background-size: auto 100%;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+ p.no-space {
+  white-space: pre-wrap; 
+ }
+
+.carousel-control {
+  opacity: 1;
+
+  width: 23%;
+  top: auto;
+  width: 10%;
+  &.left {
+    //transform: translateX(6rem);
+    transform: translate(0rem, -0.5rem);
+ 
+  }
+
+  &.right {
+    transform: translate(0rem, -0.5rem);    
+  }
+  
+  .icon-next, .icon-prev {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+  //  opacity: .5;
+    right: 0;
+    //background-color: #003b4d;
+   // height: 30px;
+   // width: 30px;
+    //border-radius: 50%;
+
+  }
+
+  .list-group-item {
+    padding: 0px !important;
+
+  }
+
+
+  
+}
+
+.carousel.slide {
+  //right: 1.0rem;
+  .active {
+    width: 100%;
+  }
+}
+
+.carousel-indicators {
+  display: none;
+  bottom: -3rem;
+  li {
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+    &.active {
+      background-color: lightgreen;
+    }
+  }
+}
+
+tbody tr th a{ 
+  color: white;
+}
+
+a:hover { 
+  
+  color: white !important;
+  cursor: pointer;
+}
+
+.top1 {
+  
+  background-color:#FFFFFF;
+  margin-top:10px;
+}
+
+.top1 img {
+  width:100%;
+  height:230px;
+}
+
+.food1 {
+  background-color:#000000;
+  height:230px;
+}
