@@ -42,7 +42,7 @@
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "@angular/cli": "1.0.3",
+    "@angular/cli": "1.4.9",
     "@angular/compiler-cli": "^4.2.0",
     "@angular/service-worker": "^1.0.0-beta.14",
     "@types/jasmine": "2.5.38",
