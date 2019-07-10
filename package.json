@@ -11,9 +11,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-
-  
-
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.0",
@@ -39,7 +36,7 @@
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "@angular/cli": "1.4.9",
+    "@angular/cli": "1.0.3",
     "@angular/compiler-cli": "^4.2.0",
     "@angular/service-worker": "^1.0.0-beta.14",
     "@types/jasmine": "2.5.38",
