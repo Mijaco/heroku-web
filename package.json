@@ -30,7 +30,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.5.0",
     "@fortawesome/free-solid-svg-icons": "^5.4.2",
     "bootstrap": "^4.0.0-alpha.6",
-    "core-js": "^2.4.1",
+    "core-js": "^3",
     "ngx-bootstrap": "^1.7.1",
     "rxjs": "^5.1.0",
     "web-animations-js": "^2.2.5",
