@@ -5,7 +5,7 @@ import { Question } from 'app/models/model';
 @Injectable()
 export class HeroService {
   questions: Question[]  = [];
-  questionsUrl = 'http://localhost:3000/questions';
+  questionsUrl = 'http://www.mocky.io/v2/5d279ed5320000892a71bc12';
   
   constructor(private http: HttpClient) {
   }
