@@ -11,11 +11,10 @@ import {
   animate
 } from '@angular/core';
 import { ResultService } from 'app/services/result.service';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Answer } from 'app/models/model';
 import { ResultdetailComponent } from 'app/components/resultdetail/resultdetail.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { faSearch, faCar } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'bq-summary',
   templateUrl: './summary.component.html',
@@ -39,7 +38,7 @@ export class SummaryComponent implements OnInit {
   resultado:  string ;
   @Input() score ;
   answers: Answer[];
-  @Input() faCar = faCar;
+
   constructor(private modalService: NgbModal,private ds:ResultService) {
     this.answers =  Array.from(ds.getResults().values());
     

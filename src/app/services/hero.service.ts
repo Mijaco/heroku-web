@@ -1,9 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { map } from 'rxjs/operators';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Exam, Question } from 'app/models/model';
-import { Observable } from 'rxjs/Observable';
+import { Question } from 'app/models/model';
 
 @Injectable()
 export class HeroService {

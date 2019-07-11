@@ -1,10 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import 'rxjs/add/observable/of';
-import { Result, Choice, Answer, Question } from 'app/models/model';
+//import 'rxjs/add/observable/of';
+import { Choice, Answer, Question } from 'app/models/model';
 import { isNullOrUndefined } from 'util';
-import { IfObservable } from 'rxjs/observable/IfObservable';
 
 
 @Injectable()

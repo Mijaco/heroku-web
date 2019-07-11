@@ -1,7 +1,6 @@
 import { Question, Choice } from './../../models/model';
 import {
   Component,
-  OnInit,
   Input,
   Output,
   EventEmitter,
@@ -12,10 +11,8 @@ import {
   animate,
   style,
   transition,
-  group,
   query,
   stagger,
-  state,
 } from '@angular/animations';
 import { ResultService } from 'app/services/result.service';
 
@@ -37,7 +34,7 @@ import { ResultService } from 'app/services/result.service';
     ])
   ]
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent{
   @Input() question: Question;
   @Input() selected: number;
   @Output() selectedChoice = new EventEmitter();
@@ -46,9 +43,6 @@ export class QuestionComponent implements OnInit {
   public animatePage = true;
 
   constructor(private ds: ResultService) { }
-
-  ngOnInit() {
-  }
 
   // onClicked(index) {
   //   this.selectedChoice.emit(index);

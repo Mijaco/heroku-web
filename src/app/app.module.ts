@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 // Routes
 import { RouterModule, Routes } from '@angular/router';
-import { ScoreComponent } from './components/score/score.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import { ResultService } from './services/result.service';
 import { ResultdetailComponent } from './components/resultdetail/resultdetail.component';
@@ -23,11 +22,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const routes: Routes = [
   { path: 'quiz', pathMatch: 'full', redirectTo: 'quiz' },
-  
-  {
-    path: 'score',
-    component: ScoreComponent
-  },
 
   {
     path: 'exam',
@@ -45,7 +39,6 @@ export const appRoutes = RouterModule.forRoot(routes);
     QuestionComponent,
     ChoiceComponent,
     SummaryComponent,
-    ScoreComponent,
     QuizComponent,
     ResultdetailComponent
     
