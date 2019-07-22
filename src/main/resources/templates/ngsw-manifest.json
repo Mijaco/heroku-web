@@ -1,0 +1,30 @@
+{
+  "static": {
+    "urls": {
+      "/polyfills.2fb2e4970dcc35e86b0a.bundle.js": "7a7a09cd78e99680f4680e3d7c35f82e1326bf14",
+      "/main.4458c6629063844f270e.bundle.js": "3310050a06dd8083ca48932bb94e5c52c81d4d0b",
+      "/scripts.f8d10be25cb0147a0c8c.bundle.js": "694509833285845640ec7073f2cd514da732d4e5",
+      "/sw-register.d5ba193e5f17507fd51e.bundle.js": "963462a5a25fd2faafe5af76d6cc21b0dc3691c6",
+      "/vendor.b0096f99b71551a96d5f.bundle.js": "3608ab24f2600196b3679efceba50764fe66ba41",
+      "/inline.506f7263db93722fcf99.bundle.js": "8600227a31c77e18f31de6f1deb8209a38d43b65",
+      "/styles.a851926625c647e2f1c6.bundle.css": "cf8a3b581f8aaa30c38e3a08e5414d5f2f078658",
+      "/assets/images/bear.png": "48334e2c34bfdcbfb4923b10314fa918679013c6",
+      "/assets/images/bird.png": "ca1b1306ba4587f4c02735af2125584af3868f13",
+      "/assets/images/check.png": "c2ddf297f48873b6fa4cecf36bd8635123b794b5",
+      "/assets/images/bee.png": "3bee16ec03720d9b778ba805166d94bc05c68fbf",
+      "/assets/images/checked.png": "cca1415d826f3cf25012af520cfa3f7884b6103f",
+      "/assets/images/cook.png": "7276998b11221b942f049b43aee4454f52e3f9f0",
+      "/assets/images/cycle.png": "902ab1bc1537f4e050311cc35237e7fa33f0b4ea",
+      "/assets/images/dive.png": "b6272ca850b9814768888a0c80bef1602f06851d",
+      "/assets/images/forest.png": "c4fb55495ffdc90cad3d620e8d03ea300d8fa21e",
+      "/assets/images/human.png": "77966d0e538d2a6e05cb4cfbf410a0c23b620c61",
+      "/assets/images/orango.png": "eaa2f2bf2e65be66363df9fd187d45ebffda8eb4",
+      "/assets/images/shop.png": "4df1b21007e361b60bae8e8fbf19e627813cd049",
+      "/assets/images/skate.png": "5e98cbed4dd18cad8a32b144aac9ed7af433a177",
+      "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+      "/assets/images/shark.png": "d5d1ab4c44cca70d712205ff8d13dc7203db0249",
+      "/index.html": "a7fe553cd49a883b3c963e0dda521c93cb747534"
+    },
+    "_generatedFromWebpack": true
+  }
+}
